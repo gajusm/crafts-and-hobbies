@@ -1,0 +1,672 @@
+
+
+
+
+.posRelative{
+	position: relative;
+}
+
+header{
+	// margin-bottom: 30px;
+	width: 100%;
+	float: left;
+}
+.navbar{
+	padding: 10px 0;
+	background: transparent;
+	border: none;
+	margin: 0;
+}
+.navbar-default .navbar-brand{
+	font-size: 40px;
+	font-weight: 700;
+	color: $primaryColor;
+	padding: 15px 0;
+}
+.menuRow{
+	width: 100%;
+	float: left;
+	height: 50px;
+	// background: $secondaryColor;
+	border-top: 1px solid lighten($secondaryColor, 81%);
+	border-bottom: 1px solid lighten($secondaryColor, 81%);
+	box-shadow: 0 1px 3px lighten($secondaryColor, 81%);
+}
+.navbar-collapse{
+	padding: 0;
+}
+.nav>li>a{
+	border-right: 1px solid lighten($secondaryColor, 81%);
+	// color: #fff;
+}
+.nav>li:first-child>a{
+	border-left: 1px solid lighten($secondaryColor, 81%);
+}
+.nav>li>a:focus, .nav>li>a:hover{
+	background: $primaryColor;
+	color: #fff;
+	outline: none;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+	background: $primaryColor;
+	color: #fff;
+	outline: none;
+}
+.searchMainWrap{
+	position: absolute;
+	right: 5px;
+	top: -50px;
+	width: 20%;
+}
+.searchMain{
+	float: right;
+	width: 100%;
+	position: relative;
+	border-left: 1px solid lighten($secondaryColor, 81%);
+	border-right: 1px solid lighten($secondaryColor, 81%);
+	height: 50px;
+	// background-color: lighten($secondaryColor, 60%);
+	@include transitionEase(all,.25s,ease-in-out);
+	
+	input{
+		border: none;
+		width: 100%;
+		height: 100%;
+		padding: 5px 40px 5px 10px;
+		background: transparent;
+	}
+	i{
+		position: absolute;
+	    right: 0;
+	    top: 0;
+	    font-size: 18px;
+	    color: lighten($secondaryColor, 30%);
+	    width: 40px;
+	    height: 50px;
+	    line-height: 50px;
+	    text-align: center;
+	    cursor: pointer;
+	}
+}
+.searchMain.focused{
+	background-color: lighten($primaryColor,40%);
+	input{
+		// color: #fff;
+	}
+	i{
+		// color: #fff;
+	}
+}
+.dropdown-menu{
+	padding: 0;
+	ul{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		li{
+			a{
+				display: block;
+				padding: 4px 0;
+				&:hover, &:focus{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+} 
+.navbar-nav{
+	>li{
+		&.dropdown:hover .dropdown-menu{
+			display: block;
+		}
+	}
+}
+
+.allCatsList{
+	width: 250px;
+	float: left;
+	background-color: lighten($secondaryColor, 81%);
+	h3{
+		width: 100%;
+		float: left;
+		margin: 0;
+		padding: 10px 15px;
+		color: #fff;
+		background: $primaryColor;
+		font-size: 20px;
+	}
+	a{
+		text-transform: uppercase;
+		font-size: 13px;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	>ul{
+		width: 100%;
+		float: left;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		position: relative;
+		>li{
+			width: 100%;
+			float: left;
+			>a{
+				width: 100%;
+				float: left;
+				padding: 10px 15px;
+				color: $secondaryColor;
+				@include transitionEase(all,.25s,ease-in-out);
+				&:hover{
+					background: $primaryColor;
+					color: #fff;
+				}
+			}
+			&:hover > a{
+				background: $primaryColor;
+				color: #fff;
+			}
+			.catsDD{
+				display: none;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 100%;
+				top: 0;
+				margin-top: -1px;
+				padding: 15px 10px;
+				ul{
+					list-style: none;
+					padding: 0;
+					margin: 0;
+					li{
+						display: block;
+					}
+					a{
+						padding: 5px 0;
+						display: block;
+					}
+				}
+			}
+			&:hover .catsDD{
+				// display: block;
+			}
+		}
+	}
+}
+.mainCatsList{
+	width: 100%;
+	float: left;
+	background-color: lighten($secondaryColor, 81%);
+	h3{
+		width: 100%;
+		float: left;
+		margin: 0;
+		padding: 10px 15px;
+		color: #fff;
+		background: $primaryColor;
+		font-size: 20px;
+	}
+	a{
+		text-transform: uppercase;
+		font-size: 13px;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	>ul{
+		width: 100%;
+		float: left;
+		border: 1px solid lighten($secondaryColor, 60%);
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		>li{
+			width: 100%;
+			float: left;
+			position: relative;
+			>a{
+				width: 100%;
+				float: left;
+				padding: 10px 15px;
+				color: $secondaryColor;
+				&:hover{
+					background: lighten($primaryColor, 20%);
+				}
+			}
+			.catsDD{
+				display: none;
+				position: absolute;
+				width: 100%;
+				left: 100%;
+				top: 0;
+				border: 1px solid lighten($secondaryColor, 60%);
+				margin-top: -1px;
+				padding: 15px 0;
+				ul{
+					list-style: none;
+					padding: 0;
+					margin: 0;
+					li{
+						display: block;
+					}
+					a{
+						padding: 5px 0;
+						display: block;
+					}
+				}
+			}
+			&:hover .catsDD{
+				display: block;
+			}
+			&:hover > a{
+				background: lighten($primaryColor, 20%);
+			}
+		}
+	}
+}
+.homeBanner{
+	.carousel-inner>.item{
+		min-height: 400px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+}
+
+
+.prodBox{
+	width: 100%;
+	float: left;
+	box-shadow: 0 0 10px lighten($secondaryColor, 81%);
+	position: relative;
+	margin: 0 0 10px 0;
+	.prodImg{
+		width: 100%;
+		// float: left;
+		// height: 200px;
+		text-align: center;
+		img{
+			max-width: 100%;
+			max-height: 100%;
+			margin: auto;
+		}
+	}
+	.prodInfo{
+		width: 100%;
+		// float: left;
+		padding: 5px 10px;
+		h4{
+			// text-align: center;
+			font-size: 15px;
+			text-transform: capitalize;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			margin: 0 0 5px;
+		}
+		.prodPrice{
+			color: $primaryColor;
+		}
+	}
+	.hiddenInfo{
+		position: absolute;
+		@include transitionEase(all,.25s,ease-in-out);
+		height: 40px;
+		width: 100%;
+		// bottom: -40px;
+		opacity: 0;
+		box-shadow: 0 4px 10px lighten($secondaryColor, 81%);
+		background: #fff;
+		padding: 10px;
+		margin-top: -40px;
+		z-index: 1;
+		.enquireProd{
+			padding: 2px 10px;
+			font-size: 12px;
+			border: 1px solid $secondaryColor;
+			color: $primaryColor;
+		}
+	}
+	&:hover .hiddenInfo{
+		margin-top: 0px;
+		opacity: 1;
+	}
+}
+.hotDeals{
+	width: 100%;
+	float: left;
+	position: relative;
+	margin: 20px 0;
+	.hotTitle{
+		width: 100%;
+		float: left;
+		border: 1px solid $primaryColor;
+		color: $primaryColor;
+		padding: 10px 20px;
+		text-transform: uppercase;
+		box-shadow: 0 1px 10px lighten($secondaryColor,81%);
+		margin: 0;
+		height: 40px;
+		h3{
+			transform: scaleY(1.7);
+			letter-spacing: 2px;
+			margin: 3px 0 0 0;
+    		font-size: 14px;
+		}
+	}
+}
+.prodSlider{
+	float: left;
+	width: 100%;
+	position: static;
+	.slick-slide{
+		padding: 0;
+	}
+	.slick-list{
+		padding-bottom: 25px;
+	}
+	.slick-slide{
+		margin: 0 5px;
+	}
+	.slick-arrow{
+		top: 20px;
+		width: 30px;
+    	height: 30px;
+		background: $primaryColor;
+	}
+	.slick-prev{
+		left: inherit;
+		right: 38px;
+		&:before{
+			content:"\f104";
+			font-family: 'FontAwesome';
+		}
+	}
+	.slick-next{
+		right: 4px;
+		&:before{
+			content:"\f105";
+			font-family: 'FontAwesome';
+		}
+	}
+}
+.homeMidRow{
+	width: 100%;
+	float: left;
+	margin: 0;
+}
+.homeAds{
+	margin: 20px 0 0;
+	position: relative;
+	display: block;
+	.adsTitle{
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		width: 100%;
+		text-align: center;
+		z-index: 3;
+		color: #fff;
+		font-size: 18px;
+		span{
+			display: inline-block;
+			padding: 5px 10px;
+			background: $primaryColor;
+		}
+	}
+	.adsBox{
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		img{
+			width: 100%;
+			max-height: 100%;
+			@include transitionEase(all,.25s,linear);
+		}
+		&:before{
+			@include transitionEase(all,.25s,linear);
+ 			position: absolute;
+			content: '';
+			top: 0;
+			left: -50%;
+			width: 50%;
+			height: 100%;
+			background: rgba(0,0,0,0.3);
+			z-index: 2;
+		}
+		&:after{
+			@include transitionEase(all,.25s,linear);
+			position: absolute;
+			content: '';
+			top: 0;
+			right: -50%;
+			width: 50%;
+			height: 100%;
+			background: rgba(0,0,0,0.3);
+		}
+	}
+	&:hover .adsBox:before{
+		left: 0;
+	}
+	&:hover .adsBox:after{
+		right: 0;
+	}
+	&:hover .adsBox img{
+		transform: scale(1.3)
+	}
+	
+}
+
+footer{
+	background: $secondaryColor;
+	color: #fff;
+	font-size: 13px;
+	h3{
+		font-size: 16px;
+	}
+	.social{
+		padding: 0;
+		list-style: none;
+		li{
+			display: inline-block;
+			a{
+				display: inline-block;
+				padding: 5px;
+				background: $primaryColor;
+				width: 30px;
+			    text-align: center;
+			    margin: 0 2px;
+			    font-size: 14px;
+			    @include transitionEase(all,.5s,ease-in-out);
+			    &:hover{
+			    	transform: rotate(360deg);
+			    }
+			}
+			i{
+				color: #fff;
+			}
+		}
+	}
+	.fLinks{
+		padding: 0;
+		list-style: none;
+		li{
+			display: block;
+			a{
+				display: inline-block;
+				padding: 3px 0;
+				font-size: 13px;
+				color: #fff;
+			}
+		}
+	}
+	.fotterBottom{
+		background: lighten($secondaryColor,10%);
+		padding: 10px 0;
+		.highlight{
+			color: $primaryColor;
+		}
+	}
+}
+
+.mainBar, .sideBar{
+	margin: 30px 0 0;
+}
+.sideBar{
+	
+	.filterWrap{
+		.containerInput{
+			width: 100%;
+		}
+	}
+}.breadCrum{
+	padding: 0;
+	margin: 20px 0 0 0;
+	list-style: none;
+	li{
+		display: inline;
+		margin: 0 20px 0 0;
+		position: relative;
+		&:after{
+			content:"\f105";
+			font-family: 'FontAwesome';
+			position: absolute;
+			right: -13px;
+		}
+		a{
+			&:hover,&:focus{
+				color: $primaryColor;
+			}
+		}
+	}
+	li:last-child{
+		&:after{
+			display: none;
+		}
+	}
+}
+
+
+
+.rightHeader{
+	float: right;
+	ul{
+		padding: 0;
+		margin: 10px 0 0;
+		list-style: none;
+		li{
+			display: inline-block;
+			margin: 0 0 0 10px;
+			a{
+				color: $primaryColor;
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+
+.infoTabBox{
+	margin: 20px 0 0;
+	.icon-banner-left {
+	    border: 1px solid $primaryColor;
+	    padding: 11px 15px;
+	    margin-right: 20px;
+	    font-size: 24px;
+	    -moz-border-radius: 50%;
+	    -webkit-border-radius: 50%;
+	    border-radius: 50%;
+	    -moz-transition: all 400ms ease;
+	    -webkit-transition: all 400ms ease;
+	    -o-transition: all 400ms ease;
+	    transition: all 400ms ease;
+	    -moz-backface-visibility: hidden;
+	    -webkit-backface-visibility: hidden;
+	    backface-visibility: hidden;
+	    perspective: 1000px;
+	    .fa-fw {
+		    width: 1.28571429em;
+		    text-align: center;
+		    color: $primaryColor;
+		    transition: 0.6s;
+			transform-style: preserve-3d;
+			position: relative;
+		}
+		&:hover .fa-fw{
+			transform: rotateY(180deg);
+		}
+	}
+	.em-banner-right {
+	    overflow: hidden;
+	    h5 {
+		    margin-bottom: 7px;
+		    font-size: 15px;
+		    a {
+		    	color: $primaryColor;
+			}
+		}
+		p{
+			font-size: 13px;
+		}
+	}
+}
+.homeCatsRow{
+	.homeCats{
+		position: relative;
+		margin: 0 0 20px;
+		.catsTitle{
+			position: absolute;
+		    top: 50%;
+		    transform: translate(0, -50%);
+		    width: 100%;
+		    text-align: center;
+		    z-index: 3;
+		    color: #fff;
+			font-size: 24px;
+			text-transform: uppercase;
+			font-weight: 600;
+		}
+		.homeCatsBox{
+			width: 100%;
+			position: relative;
+			overflow: hidden;
+			img{
+				width: 100%;
+				max-height: 100%;
+				@include transitionEase(all,.25s,linear);
+			}
+			&:before{
+				@include transitionEase(all,.25s,linear);
+	 			position: absolute;
+				content: '';
+				top: 0;
+				left: -50%;
+				width: 50%;
+				height: 100%;
+				background: rgba(0,0,0,0.3);
+				z-index: 2;
+			}
+			&:after{
+				@include transitionEase(all,.25s,linear);
+				position: absolute;
+				content: '';
+				top: 0;
+				right: -50%;
+				width: 50%;
+				height: 100%;
+				background: rgba(0,0,0,0.3);
+			}
+		}
+		&:hover .homeCatsBox:before{
+			left: 0;
+		}
+		&:hover .homeCatsBox:after{
+			right: 0;
+		}
+		&:hover .homeCatsBox img{
+			transform: scale(1.3)
+		}
+	}
+}

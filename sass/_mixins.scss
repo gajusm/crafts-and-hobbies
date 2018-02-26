@@ -1,0 +1,40 @@
+// mixins starts here
+@mixin borderRadius($radius) {
+  	-webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}
+@mixin transitionEase($property, $interval,$type) {
+  	-webkit-transition: $property $interval $type;
+	   -moz-transition: $property $interval $type;
+	    -ms-transition: $property $interval $type;
+	     -o-transition: $property $interval $type;
+	        transition: $property $interval $type;
+}
+@mixin aspectRatio($width, $height) {
+	position: relative;
+	&:before {
+		display: block;
+		content: "";
+		width: 100%;
+		padding-top: ($height / $width) * 100%;
+  	}
+  	> .aspectContent {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    text-align: center;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    background-size: cover;
+	    img{
+	    	max-width: 100%;
+	    	max-height: 100%;
+	    	margin: auto;
+	    }
+  	}
+}
+// mixins ends here

@@ -1,0 +1,118 @@
+@media screen and (min-width: 1400px){
+	.container {
+	    width: 1400px;
+	}
+}
+// min-width: 1400px ends
+@media screen and (min-width: 768px) {
+	.navbar-nav{
+		position: relative;
+		width: 100%;
+		padding-right: 21%;
+		>li{
+			position: static;
+			.dropdown-menu{
+				width: 100%;
+				border-radius: 0;
+				margin-top: 90px;
+				border-color: lighten($secondaryColor, 81%);
+				-webkit-transition: all .25s linear;
+				   -moz-transition: all .25s linear;
+				    -ms-transition: all .25s linear;
+				     -o-transition: all .25s linear;
+				        transition: all .25s linear;
+			}
+			&.dropdown:hover .dropdown-menu{
+				-webkit-transition: all .25s linear;
+				   -moz-transition: all .25s linear;
+				    -ms-transition: all .25s linear;
+				     -o-transition: all .25s linear;
+				        transition: all .25s linear;
+				margin-top: -2px;
+				display: block;
+			}
+		}
+	}
+	.allCatsList{
+		>ul{
+			>li{
+				&:hover .catsDD{
+					display: block;
+				}
+			}
+		}
+	}
+}
+// min-width: 768px ends
+@media screen and (max-width: 767px) {
+	.navbar-toggle{
+		border-radius: 0;
+		margin: 10px 0 0;
+		background: $secondaryColor;
+		color: #fff;
+	}
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+		background: lighten($secondaryColor, 20%);
+	}
+	.navbar-default .navbar-toggle .icon-bar{
+		background-color: #fff;
+	}
+	.searchMainWrap{
+		position: static;
+		width: 100%;
+    	.searchMain{
+    		border: none;
+    		// input{
+    		// 	display: none
+    		// }
+    		// i{
+    		// 	height: 33px;
+    		// 	line-height: 33px;
+    		// 	color: #fff;
+    		// 	background: $primaryColor;
+    		// }
+    	}
+	}
+	.navbar-nav{
+		margin: 0;
+		>li{
+			width: 100%;
+			float: left;
+			.dropdown-menu{
+				position: static;
+			}
+		}
+	}
+	.allCatsList{
+		width: 100%;
+		>ul{
+			>li{
+				&:hover .catsDD{
+					display: block;
+				}
+				>a{
+					width: auto;
+					padding-left: 30px;
+					&:hover{
+						background: transparent;
+						color: $secondaryColor;
+					}
+				}
+				.catsDD{
+					position: static;
+					width: 100%;
+					float: left;
+					padding: 5px 30px;
+					a{
+						color: lighten($secondaryColor,20%);
+					}
+				}
+				&:hover > a{
+					background: transparent;
+					color: $secondaryColor;
+				}
+			}
+		}
+	}
+}
+// max-width: 767px ends

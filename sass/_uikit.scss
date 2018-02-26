@@ -1,0 +1,165 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	background-color: #fff;
+}
+a{
+	text-decoration: none;
+	color: $secondaryColor;
+}
+a:hover{
+	color: lighten($secondaryColor,50%);
+}
+input:focus{
+	outline: none;
+}
+
+.aspectBox {
+	@include aspectRatio(16, 9);
+	background: $secondaryColor;
+	color: #fff;
+}
+.aspectBox1 {
+	@include aspectRatio(16, 9);
+	background: $secondaryColor;
+	color: #fff;
+}
+.primaryBtn {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    background: $primaryColor;
+    color: #fff;
+    text-transform: uppercase;
+    @include borderRadius(0px);
+    margin: 0 0 10px;
+    border: none;
+    cursor: pointer;
+}
+.primaryBtn:hover{
+	background: darken($primaryColor,10%);
+	color: #fff;
+	text-decoration: none;
+}
+.primaryBtn:focus, .primaryBtn:active, .primaryBtn:active:focus{
+	background: darken($primaryColor,10%);
+	color: #fff;
+	text-decoration: none;
+	outline: none;
+}
+.secondaryBtn {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    background: $secondaryColor;
+    color: #fff;
+    text-transform: uppercase;
+    @include borderRadius(0px);
+    margin: 0 0 10px;
+    border: none;
+    cursor: pointer;
+}
+.secondaryBtn:hover{
+	background: lighten($secondaryColor,10%);
+	color: #fff;
+	text-decoration: none;
+}
+.secondaryBtn:focus, .secondaryBtn:active, .secondaryBtn:active:focus{
+	background: lighten($secondaryColor,10%);
+	color: #fff;
+	text-decoration: none;
+	outline: none;
+}
+
+.panel-group{
+	.panel{
+		border-radius: 0;
+		.panel-heading{
+			background-color: lighten($secondaryColor,80%);
+			border-radius: 0;
+			color: $primaryColor;
+			text-transform: uppercase;
+			a{
+				@include transitionEase(all,.15s,linear);
+				&:hover{
+					color: $primaryColor;
+					text-decoration: none;
+					padding-left: 5px;
+				}
+				&:focus{
+					color: $primaryColor;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.containerInput {
+    position: relative;
+    padding-left: 28px !important;
+    margin-bottom: 10px !important;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 500;
+    input {
+	    position: absolute;
+	    opacity: 0;
+	    &:checked ~ .checkMark:after {
+		    display: block;
+		}
+		&:checked ~ .radioMark:after {
+		    display: block;
+		}
+	}
+	.checkMark {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    height: 20px;
+	    width: 20px;
+	    background-color: transparent;
+	    border: 1px solid $secondaryColor;
+	    &:after {
+		    left: 3px;
+		    top: 3px;
+		    width: 12px;
+		    height: 12px;
+		    background: $primaryColor;
+		    border-radius: 0px;
+		    content: "";
+		    position: absolute;
+		    display: none;
+		}
+	}
+	.radioMark {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    height: 20px;
+	    width: 20px;
+	    background-color: transparent;
+	    border-radius: 20px;
+	    border: 1px solid $secondaryColor;
+	    &:after {
+		    left: 3px;
+		    top: 3px;
+		    width: 12px;
+		    height: 12px;
+		    background: $primaryColor;
+		    border-radius: 10px;
+		    content: "";
+		    position: absolute;
+		    display: none;
+		}
+	}
+}
