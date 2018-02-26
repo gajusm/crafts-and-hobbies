@@ -5,6 +5,16 @@
 }
 // min-width: 1400px ends
 @media screen and (min-width: 768px) {
+	.menuRow{
+		height: 50px;
+	}
+	.nav>li>a{
+		border-right: 1px solid lighten($secondaryColor, 81%);
+		// color: #fff;
+	}
+	.nav>li:first-child>a{
+		border-left: 1px solid lighten($secondaryColor, 81%);
+	}
 	.navbar-nav{
 		position: relative;
 		width: 100%;
@@ -36,8 +46,26 @@
 	.allCatsList{
 		>ul{
 			>li{
+				.catsDD{
+					top: -20px;
+					-webkit-transition: all .25s linear;
+					   -moz-transition: all .25s linear;
+					    -ms-transition: all .25s linear;
+					     -o-transition: all .25s linear;
+					        transition: all .25s linear;
+				}
 				&:hover .catsDD{
 					display: block;
+					-webkit-animation-iteration-count: 1; 
+				            animation-iteration-count: 1;
+				    -webkit-animation-timing-function: linear;
+				            animation-timing-function: linear;
+				   -webkit-animation-name: animateTopZero;
+				           animation-name: animateTopZero;
+				    -webkit-animation-duration: .2s;
+				            animation-duration: .2s;
+				    -webkit-animation-fill-mode: forwards;
+				    		animation-fill-mode: forwards;
 				}
 			}
 		}

@@ -1,4 +1,4 @@
-<div class="col-sm-3">
+<div class="col-sm-4">
 	<div class="prodBox">
 		<div class="prodImg">
 			<a href="#"><img src="images/products/prod1.jpg" alt=""></a>
@@ -14,7 +14,7 @@
 		</div>
 	</div>
 </div>
-<div class="col-sm-3">
+<div class="col-sm-4">
 	<div class="prodBox">
 		<div class="prodImg">
 			<a href="#"><img src="images/products/prod2.jpg" alt=""></a>
@@ -30,7 +30,7 @@
 		</div>
 	</div>
 </div>
-<div class="col-sm-3">
+<div class="col-sm-4">
 	<div class="prodBox">
 		<div class="prodImg">
 			<a href="#"><img src="images/products/prod3.jpg" alt=""></a>
@@ -46,7 +46,7 @@
 		</div>
 	</div>
 </div>
-<div class="col-sm-3">
+<div class="col-sm-4">
 	<div class="prodBox">
 		<div class="prodImg">
 			<a href="#"><img src="images/products/prod4.jpg" alt=""></a>
@@ -62,7 +62,7 @@
 		</div>
 	</div>
 </div>
-<div class="col-sm-3">
+<div class="col-sm-4">
 	<div class="prodBox">
 		<div class="prodImg">
 			<a href="#"><img src="images/products/prod1.jpg" alt=""></a>
@@ -78,7 +78,7 @@
 		</div>
 	</div>
 </div>
-<div class="col-sm-3">
+<div class="col-sm-4">
 	<div class="prodBox">
 		<div class="prodImg">
 			<a href="#"><img src="images/products/prod2.jpg" alt=""></a>
@@ -94,7 +94,7 @@
 		</div>
 	</div>
 </div>
-<div class="col-sm-3">
+<div class="col-sm-4">
 	<div class="prodBox">
 		<div class="prodImg">
 			<a href="#"><img src="images/products/prod3.jpg" alt=""></a>
@@ -110,7 +110,7 @@
 		</div>
 	</div>
 </div>
-<div class="col-sm-3">
+<div class="col-sm-4">
 	<div class="prodBox">
 		<div class="prodImg">
 			<a href="#"><img src="images/products/prod4.jpg" alt=""></a>

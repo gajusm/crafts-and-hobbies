@@ -10,7 +10,9 @@
 					<li><a href="#">Category name</a></li>
 				</ul>
 			</div>
-			<div class="col-sm-3 sideBar">
+			<div class="clearfix"></div>
+			<div class="col-sm-3 col-xs-12 sideBar">
+				<div class="clearfix"></div>
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingCats">
@@ -85,7 +87,7 @@
 					</div>
 				</div>			
 			</div>
-			<div class="col-sm-9 mainBar">
+			<div class="col-sm-9 col-xs-12 mainBar">
 				<?php include 'product_grid.php';?>
 			</div>
 			

@@ -340,6 +340,65 @@
 					</div>
 				</div>
 			</div>
+			<div class="partnersRow">
+				<div class="col-xs-12">
+					<h3>Our Partners</h3>
+					<div class="brandSlider">
+						<div class="brandItem">
+							<img src="./images/partners/brand1.png" alt="">
+						</div>
+						<div class="brandItem">
+							<img src="./images/partners/brand2.png" alt="">
+						</div>
+						<div class="brandItem">
+							<img src="./images/partners/brand1.png" alt="">
+						</div>
+						<div class="brandItem">
+							<img src="./images/partners/brand2.png" alt="">
+						</div>
+						<div class="brandItem">
+							<img src="./images/partners/brand1.png" alt="">
+						</div>
+						<div class="brandItem">
+							<img src="./images/partners/brand2.png" alt="">
+						</div>
+						<div class="brandItem">
+							<img src="./images/partners/brand1.png" alt="">
+						</div>
+						<div class="brandItem">
+							<img src="./images/partners/brand2.png" alt="">
+						</div>
+						<div class="brandItem">
+							<img src="./images/partners/brand1.png" alt="">
+						</div>
+						<div class="brandItem">
+							<img src="./images/partners/brand2.png" alt="">
+						</div>
+					</div>
+					<!-- <div class="ticker-wrap">
+						<div class="ticker">
+							<div class="ticker__item">
+								<img src="./images/partners/1.png" alt="">
+							</div>
+							<div class="ticker__item">
+								<img src="./images/partners/2.png" alt="">
+							</div>
+							<div class="ticker__item">
+								<img src="./images/partners/3.png" alt="">
+							</div>
+							<div class="ticker__item">
+								<img src="./images/partners/4.jpg" alt="">
+							</div>
+							<div class="ticker__item">
+								<img src="./images/partners/5.jpg" alt="">
+							</div>
+							<div class="ticker__item">
+								<img src="./images/partners/6.png" alt="">
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
