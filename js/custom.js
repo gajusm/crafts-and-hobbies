@@ -24,7 +24,7 @@ $(function () {
 		});
 	}
 
-	$('.prodSlider').slick({
+	$('.homeProdSlider').slick({
 		slidesToShow: 3,
 		responsive: [
 			{
@@ -53,6 +53,51 @@ $(function () {
 					slidesToShow: 5
 				}
 			},
+			{
+			breakpoint: 768,
+				settings: {
+					arrows: false,
+					slidesToShow: 3
+				}
+			},
+			{
+			breakpoint: 480,
+				settings: {
+					arrows: false,
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+
+	$(document).delegate('.catVariation', 'click', function(event) {
+		$(this).parent().find('.catVariation').removeClass('active');
+		$(this).addClass('active');
+	});
+	$('.prodDetailsMainSlider').slick({
+		slidesToShow: 1,
+		arrows: true,
+		autoplay:true,
+		responsive: [
+			{
+			breakpoint: 768,
+				settings: {
+					arrows: false,
+					slidesToShow: 3
+				}
+			},
+			{
+			breakpoint: 480,
+				settings: {
+					arrows: false,
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+	$('.detProdSlider').slick({
+		slidesToShow: 4,
+		responsive: [
 			{
 			breakpoint: 768,
 				settings: {

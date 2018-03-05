@@ -277,7 +277,7 @@
 							<span>Deal of the day</span>
 						</div>
 						<div class="adsBox">
-							<img src="images/ads1.jpg" alt="">
+							<img src="./images/ads1.jpg" alt="">
 						</div>
 					</a>
 				</div>
@@ -286,7 +286,7 @@
 						<div class="hotTitle">
 							<h3>Hot Deals</h3>
 						</div>
-						<div class="prodSlider">
+						<div class="prodSlider homeProdSlider">
 							<?php include 'product_grid.php';?>
 						</div>
 					</div>
@@ -298,7 +298,7 @@
 						<div class="hotTitle">
 							<h3>New Arrivals</h3>
 						</div>
-						<div class="prodSlider">
+						<div class="prodSlider homeProdSlider">
 							<?php include 'product_grid.php';?>
 						</div>
 					</div>
@@ -309,7 +309,7 @@
 							<span>Deal of the day</span>
 						</div>
 						<div class="adsBox">
-							<img src="images/ads1.jpg" alt="">
+							<img src="./images/ads1.jpg" alt="">
 						</div>
 					</a>
 				</div>

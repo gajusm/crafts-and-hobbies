@@ -835,6 +835,74 @@ footer {
     .brandSlider .brandItem img {
       margin: auto; }
 
+.prodDetailsSec .prodName {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+.prodDetailsSec .prodPrice {
+  font-weight: 500; }
+.prodDetailsSec .infoLine {
+  font-size: 12px;
+  color: #9a9a9a; }
+.prodDetailsSec .quickLine {
+  font-size: 13px;
+  color: #16181d; }
+  .prodDetailsSec .quickLine .greenText {
+    color: #008000; }
+  .prodDetailsSec .quickLine .redText {
+    color: #f00f00; }
+.prodDetailsSec hr {
+  margin: 5px 0; }
+.prodDetailsSec .categorizeProd {
+  margin: 10px 0; }
+  .prodDetailsSec .categorizeProd h4 {
+    margin: 0; }
+  .prodDetailsSec .categorizeProd .catVariation {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    box-shadow: 0 0 3px #222;
+    margin: 0 5px 5px 0; }
+    .prodDetailsSec .categorizeProd .catVariation.active {
+      box-shadow: 0 0 8px 2px #0bbd94; }
+    .prodDetailsSec .categorizeProd .catVariation.sizeVar {
+      border: 1px solid #222;
+      width: auto;
+      padding: 0 5px;
+      box-shadow: none; }
+      .prodDetailsSec .categorizeProd .catVariation.sizeVar.active {
+        border-color: #0bbd94;
+        box-shadow: 0 0 0 1px #0bbd94; }
+    .prodDetailsSec .categorizeProd .catVariation:hover {
+      color: #16181d; }
+.prodDetailsSec .infoActions .btn {
+  margin: 5px 0; }
+
+.prodDetailsMainSlider .slick-slide {
+  padding: 0; }
+.prodDetailsMainSlider .slick-slide {
+  margin: 0 5px; }
+.prodDetailsMainSlider .slick-arrow {
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #0bbd94;
+  z-index: 99; }
+.prodDetailsMainSlider .slick-prev {
+  left: inherit;
+  right: 38px; }
+  .prodDetailsMainSlider .slick-prev:before {
+    content: "\f104";
+    font-family: 'FontAwesome'; }
+.prodDetailsMainSlider .slick-next {
+  right: 4px; }
+  .prodDetailsMainSlider .slick-next:before {
+    content: "\f105";
+    font-family: 'FontAwesome'; }
+
+.recommendations {
+  margin: 30px 0 0; }
+
 @media screen and (min-width: 1400px) {
   .container {
     width: 1400px; } }
