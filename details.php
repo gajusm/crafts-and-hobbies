@@ -15,18 +15,18 @@
 			<div class="col-sm-6 col-xs-12">
 				<div class="prodDetailsImg">
 					<div class="prodDetailsMainSlider">
-						<div>
-							<img src="./images/products/prod1.jpg" alt="product" />
-						</div>
-						<div>
-							<img src="./images/products/prod1.jpg" alt="product" />
-						</div>
-						<div>
-							<img src="./images/products/prod1.jpg" alt="product" />
-						</div>
-						<div>
-							<img src="./images/products/prod1.jpg" alt="product" />
-						</div>
+						<a class="example-image-link" href="./images/products/prod1.jpg" data-lightbox="example-set" data-title="Product image caption goes here.">
+							<img class="example-image" src="./images/products/prod1.jpg" alt=""/>
+						</a>
+						<a class="example-image-link" href="./images/products/prod1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+							<img class="example-image" src="./images/products/prod1.jpg" alt=""/>
+						</a>
+						<a class="example-image-link" href="./images/products/prod1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+							<img class="example-image" src="./images/products/prod1.jpg" alt=""/>
+						</a>
+						<a class="example-image-link" href="./images/products/prod1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+							<img class="example-image" src="./images/products/prod1.jpg" alt=""/>
+						</a>
 					</div>
 					
 				</div>			

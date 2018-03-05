@@ -881,7 +881,10 @@ footer {
 .prodDetailsMainSlider .slick-slide {
   padding: 0; }
 .prodDetailsMainSlider .slick-slide {
-  margin: 0 5px; }
+  margin: 0 5px;
+  text-align: center; }
+  .prodDetailsMainSlider .slick-slide img {
+    margin: auto; }
 .prodDetailsMainSlider .slick-arrow {
   top: 20px;
   width: 30px;

@@ -53,6 +53,7 @@
 	<script src="js/pmd-select2.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/product/listing.js"></script>
+	<script src="js/lightbox.min.js"></script>
 	<script src="js/custom.js"></script>
 	<script>
 		$(function() {

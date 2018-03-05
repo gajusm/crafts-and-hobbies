@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="css/pmd-select2.css">
 
 	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/lightbox.min.css">
 	<link rel="stylesheet" href="css/app.css">
 </head>
 <body>

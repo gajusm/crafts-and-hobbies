@@ -78,6 +78,7 @@ $(function () {
 		slidesToShow: 1,
 		arrows: true,
 		autoplay:true,
+		infinite: false,
 		responsive: [
 			{
 			breakpoint: 768,
