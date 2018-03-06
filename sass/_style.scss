@@ -316,6 +316,7 @@ header{
 		margin-top: -40px;
 		z-index: 1;
 		.enquireProd{
+			display: inline-block;
 			padding: 2px 10px;
 			font-size: 12px;
 			// border: 1px solid $secondaryColor;
@@ -506,7 +507,7 @@ footer{
 }
 
 .mainBar, .sideBar{
-	margin: 30px 0 0;
+	margin: 10px 0 0;
 }
 .sideBar{
 	
@@ -517,7 +518,7 @@ footer{
 	}
 }.breadCrum{
 	padding: 0;
-	margin: 20px 0 0 0;
+	margin: 20px 0;
 	list-style: none;
 	li{
 		display: inline;
@@ -878,4 +879,127 @@ footer{
 }
 .recommendations{
 	margin: 30px 0 0;
+}
+
+.cartBox{
+	width: 100%;
+	float: left;
+	margin: 0 0 10px;
+	border: 1px solid $primaryColor;
+	padding: 10px 5px;
+	.quickLine{
+		font-size: 13px;
+		color: $secondaryColor;
+		.greenText{
+			color: #008000;
+		}
+		.redText{
+			color: #f00f00;
+		}
+	}
+	h3{
+		margin: 0;
+	}
+	p{
+		font-size: 12px;
+		margin: 0 0 5px;
+	}
+	.cartProdAction{
+		padding: 3px 15px;
+		background: $primaryColor;
+		color: #fff;
+		font-size: 13px;
+		margin: 5px 5px 0 0;
+		display: inline-block;
+		&#removeProd{
+			background: red;
+		}
+	}
+}
+.summaryWrap{
+	width: 100%;
+	float: left;
+	.summaryBox{
+		width: 100%;
+		float: left;
+		margin: 0;
+		border: 1px solid $primaryColor;
+		padding: 10px;
+		h3{
+			margin: 0 0 5px;
+		}
+		.summLine{
+			width: 100%;
+			float: left;
+			margin: 5px 0;
+			.summLeft{
+				width: 69%;
+				float: left;
+			}
+			.summRight{
+				width: 29%;
+				float: right;
+			}
+		}
+		hr{
+			width: 100%;
+			float: left;
+			margin: 5px 0;
+			border-color: $primaryColor;
+		}
+	}
+}
+.titleLevel1{
+	width: 100%;
+	float: left;
+	padding: 10px;
+	border: 1px solid $primaryColor;
+	color: $primaryColor;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	margin: 0 0 10px;
+}
+.chTitle{
+	margin: 10px 0;
+	text-transform: uppercase;
+}
+.normalUl{
+	padding: 0;
+	margin: 0;
+	display: block;
+	list-style: none;
+}
+.chkMethodWrap{
+	padding-bottom: 20px;
+	.forgotPass{
+		color: red;
+		font-size: 12px;
+	}
+}
+.menuDD{
+	position: relative;
+	.menuDDlist{
+		display: none;
+		position: absolute;
+		right: 0;
+		z-index: 2;
+		background: #fff;
+		width: 220px;
+		border: 1px solid lighten($secondaryColor, 81%);;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		li{
+			display: block;
+			a{
+				padding: 5px 15px;
+				font-size: 14px;
+				display: block;
+			}
+		}
+	}
+	&:hover .menuDDlist{
+		display: block;
+	}
 }

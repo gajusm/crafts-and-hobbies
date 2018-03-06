@@ -37,8 +37,15 @@
 				</div>
 				<div class="rightHeader">
 					<ul>
-						<li><a href="#"><i class="fa fa-user"></i></a></li>
-						<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+						<li class="menuDD">
+							<a href="#"><i class="fa fa-user"></i></a>
+							<ul class="menuDDlist">
+								<li><a href="my-account.php">My account</a></li>
+								<li><a href="my-orders.php">My orders</a></li>
+								<li><a href="logout.php">Logout</a></li>
+							</ul>
+						</li>
+						<li><a href="./cart.php"><i class="fa fa-shopping-cart"></i></a></li>
 					</ul>
 				</div>
 				</div><!-- /.container-fluid -->
@@ -309,3 +316,5 @@
 			</div>
 		</div>
 	</header>
+	<div class="clearfix"></div>
+	<div class="pageWrapper"><!-- pageWrapper starts here -->

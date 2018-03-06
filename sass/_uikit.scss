@@ -17,6 +17,28 @@ a:hover{
 input:focus{
 	outline: none;
 }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+	font-weight: 500;
+}
+.pmd-textfield label{
+	font-weight: 500;
+	color: $secondaryColor;
+}
+.pmd-textfield .form-control{
+	// border-color: $secondaryColor;
+}
+.select2-container--bootstrap .select2-dropdown{
+	border-color: $primaryColor;
+}
+.pmd-textfield-focused, .select2-container--bootstrap .select2-results__option--highlighted[aria-selected], .pmd-tabs-bg .pmd-tabs-scroll-container, .pmd-tabs-bg .pmd-tabs-scroll-left, .pmd-tabs-bg .pmd-tabs-scroll-right{
+	background-color: $primaryColor;
+}
+.pmd-tabs .pmd-tab-active-bar{
+	background-color: $secondaryColor;
+}
+.pmd-textfield textarea.form-control{
+	resize: vertical;
+}
 
 .aspectBox {
 	@include aspectRatio(16, 9);
@@ -116,24 +138,44 @@ input:focus{
 	    opacity: 0;
 	    &:checked ~ .checkMark:after {
 		    display: block;
+		    -webkit-animation-iteration-count: 1; 
+		            animation-iteration-count: 1;
+		    -webkit-animation-timing-function: linear;
+		            animation-timing-function: linear;
+		   -webkit-animation-name: animateRadioMark;
+		           animation-name: animateRadioMark;
+		    -webkit-animation-duration: .2s;
+		            animation-duration: .2s;
+		    -webkit-animation-fill-mode: forwards;
+		    		animation-fill-mode: forwards;
 		}
 		&:checked ~ .radioMark:after {
 		    display: block;
+		    -webkit-animation-iteration-count: 1; 
+		            animation-iteration-count: 1;
+		    -webkit-animation-timing-function: linear;
+		            animation-timing-function: linear;
+		   -webkit-animation-name: animateRadioMark;
+		           animation-name: animateRadioMark;
+		    -webkit-animation-duration: .2s;
+		            animation-duration: .2s;
+		    -webkit-animation-fill-mode: forwards;
+		    		animation-fill-mode: forwards;
 		}
 	}
 	.checkMark {
 	    position: absolute;
 	    top: 0;
 	    left: 0;
-	    height: 20px;
-	    width: 20px;
+	    height: $checkboxWidth;
+	    width: $checkboxWidth;
 	    background-color: transparent;
 	    border: 1px solid $secondaryColor;
 	    &:after {
-		    left: 3px;
-		    top: 3px;
-		    width: 12px;
-		    height: 12px;
+		    left: ($checkboxWidth / 2);
+		    top: ($checkboxWidth / 2);
+		    width: 0;
+		    height: 0;
 		    background: $primaryColor;
 		    border-radius: 0px;
 		    content: "";
@@ -145,21 +187,43 @@ input:focus{
 	    position: absolute;
 	    top: 0;
 	    left: 0;
-	    height: 20px;
-	    width: 20px;
+	    height: $checkboxWidth;
+	    width: $checkboxWidth;
 	    background-color: transparent;
-	    border-radius: 20px;
+	    border-radius: $checkboxWidth;
 	    border: 1px solid $secondaryColor;
 	    &:after {
-		    left: 3px;
-		    top: 3px;
-		    width: 12px;
-		    height: 12px;
+		    left: ($checkboxWidth / 2);
+		    top: ($checkboxWidth / 2);
+		    width: 0;
+		    height: 0;
 		    background: $primaryColor;
 		    border-radius: 10px;
 		    content: "";
 		    position: absolute;
 		    display: none;
 		}
+	}
+}
+@keyframes animateRadioMark {
+	0% {
+		
+	}
+	100% {
+		width: ($checkboxWidth - 8);
+		height: ($checkboxWidth - 8);
+		left: 3px;
+		top: 3px;
+	}
+}
+@-webkit-keyframes animateRadioMark {
+	0% {
+		
+	}
+	100% {
+		width: ($checkboxWidth - 8);
+		height: ($checkboxWidth - 8);
+		left: 3px;
+		top: 3px;
 	}
 }

@@ -16,6 +16,25 @@ a:hover {
 input:focus {
   outline: none; }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: 500; }
+
+.pmd-textfield label {
+  font-weight: 500;
+  color: #16181d; }
+
+.select2-container--bootstrap .select2-dropdown {
+  border-color: #0bbd94; }
+
+.pmd-textfield-focused, .select2-container--bootstrap .select2-results__option--highlighted[aria-selected], .pmd-tabs-bg .pmd-tabs-scroll-container, .pmd-tabs-bg .pmd-tabs-scroll-left, .pmd-tabs-bg .pmd-tabs-scroll-right {
+  background-color: #0bbd94; }
+
+.pmd-tabs .pmd-tab-active-bar {
+  background-color: #16181d; }
+
+.pmd-textfield textarea.form-control {
+  resize: vertical; }
+
 .aspectBox {
   position: relative;
   background: #16181d;
@@ -153,9 +172,29 @@ input:focus {
     position: absolute;
     opacity: 0; }
     .containerInput input:checked ~ .checkMark:after {
-      display: block; }
+      display: block;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-name: animateRadioMark;
+      animation-name: animateRadioMark;
+      -webkit-animation-duration: .2s;
+      animation-duration: .2s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards; }
     .containerInput input:checked ~ .radioMark:after {
-      display: block; }
+      display: block;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-name: animateRadioMark;
+      animation-name: animateRadioMark;
+      -webkit-animation-duration: .2s;
+      animation-duration: .2s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards; }
   .containerInput .checkMark {
     position: absolute;
     top: 0;
@@ -165,10 +204,10 @@ input:focus {
     background-color: transparent;
     border: 1px solid #16181d; }
     .containerInput .checkMark:after {
-      left: 3px;
-      top: 3px;
-      width: 12px;
-      height: 12px;
+      left: 10px;
+      top: 10px;
+      width: 0;
+      height: 0;
       background: #0bbd94;
       border-radius: 0px;
       content: "";
@@ -184,16 +223,28 @@ input:focus {
     border-radius: 20px;
     border: 1px solid #16181d; }
     .containerInput .radioMark:after {
-      left: 3px;
-      top: 3px;
-      width: 12px;
-      height: 12px;
+      left: 10px;
+      top: 10px;
+      width: 0;
+      height: 0;
       background: #0bbd94;
       border-radius: 10px;
       content: "";
       position: absolute;
       display: none; }
 
+@keyframes animateRadioMark {
+  100% {
+    width: 12px;
+    height: 12px;
+    left: 3px;
+    top: 3px; } }
+@-webkit-keyframes animateRadioMark {
+  100% {
+    width: 12px;
+    height: 12px;
+    left: 3px;
+    top: 3px; } }
 .posRelative {
   position: relative; }
 
@@ -454,6 +505,7 @@ header {
     margin-top: -40px;
     z-index: 1; }
     .prodBox .hiddenInfo .enquireProd {
+      display: inline-block;
       padding: 2px 10px;
       font-size: 12px;
       background-color: #0bbd94;
@@ -623,14 +675,14 @@ footer {
       color: #0bbd94; }
 
 .mainBar, .sideBar {
-  margin: 30px 0 0; }
+  margin: 10px 0 0; }
 
 .sideBar .filterWrap .containerInput {
   width: 100%; }
 
 .breadCrum {
   padding: 0;
-  margin: 20px 0 0 0;
+  margin: 20px 0;
   list-style: none; }
   .breadCrum li {
     display: inline;
@@ -905,6 +957,110 @@ footer {
 
 .recommendations {
   margin: 30px 0 0; }
+
+.cartBox {
+  width: 100%;
+  float: left;
+  margin: 0 0 10px;
+  border: 1px solid #0bbd94;
+  padding: 10px 5px; }
+  .cartBox .quickLine {
+    font-size: 13px;
+    color: #16181d; }
+    .cartBox .quickLine .greenText {
+      color: #008000; }
+    .cartBox .quickLine .redText {
+      color: #f00f00; }
+  .cartBox h3 {
+    margin: 0; }
+  .cartBox p {
+    font-size: 12px;
+    margin: 0 0 5px; }
+  .cartBox .cartProdAction {
+    padding: 3px 15px;
+    background: #0bbd94;
+    color: #fff;
+    font-size: 13px;
+    margin: 5px 5px 0 0;
+    display: inline-block; }
+    .cartBox .cartProdAction#removeProd {
+      background: red; }
+
+.summaryWrap {
+  width: 100%;
+  float: left; }
+  .summaryWrap .summaryBox {
+    width: 100%;
+    float: left;
+    margin: 0;
+    border: 1px solid #0bbd94;
+    padding: 10px; }
+    .summaryWrap .summaryBox h3 {
+      margin: 0 0 5px; }
+    .summaryWrap .summaryBox .summLine {
+      width: 100%;
+      float: left;
+      margin: 5px 0; }
+      .summaryWrap .summaryBox .summLine .summLeft {
+        width: 69%;
+        float: left; }
+      .summaryWrap .summaryBox .summLine .summRight {
+        width: 29%;
+        float: right; }
+    .summaryWrap .summaryBox hr {
+      width: 100%;
+      float: left;
+      margin: 5px 0;
+      border-color: #0bbd94; }
+
+.titleLevel1 {
+  width: 100%;
+  float: left;
+  padding: 10px;
+  border: 1px solid #0bbd94;
+  color: #0bbd94;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 0 0 10px; }
+
+.chTitle {
+  margin: 10px 0;
+  text-transform: uppercase; }
+
+.normalUl {
+  padding: 0;
+  margin: 0;
+  display: block;
+  list-style: none; }
+
+.chkMethodWrap {
+  padding-bottom: 20px; }
+  .chkMethodWrap .forgotPass {
+    color: red;
+    font-size: 12px; }
+
+.menuDD {
+  position: relative; }
+  .menuDD .menuDDlist {
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    background: #fff;
+    width: 220px;
+    border: 1px solid #e5e7eb;
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    .menuDD .menuDDlist li {
+      display: block; }
+      .menuDD .menuDDlist li a {
+        padding: 5px 15px;
+        font-size: 14px;
+        display: block; }
+  .menuDD:hover .menuDDlist {
+    display: block; }
 
 @media screen and (min-width: 1400px) {
   .container {

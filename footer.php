@@ -1,3 +1,5 @@
+</div><!-- pageWrapper ends here -->
+<div class="clearfix"></div>
 <footer>
 		<div class="container">
 			<div class="row">

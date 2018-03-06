@@ -30,6 +30,39 @@
             <div class="col-sm-3">Select</div>
             <div class="col-sm-3">
                 <!--Simple Select with Search-->
+                <div class="form-group pmd-textfield">
+                    <label>Simple Select with Search</label>
+                    <select class="select-with-search form-control pmd-select2">
+                        <option></option>
+                        <option>Dallas Cowboys</option>
+                        <option>New York Giants</option>
+                        <option>Philadelphia Eagles</option>
+                        <option>Washington Redskins</option>
+                        <option>Chicago Bears</option>
+                        <option>Detroit Lions</option>
+                        <option>Green Bay Packers</option>
+                        <option>Minnesota Vikings</option>
+                        <option>Arizona Cardinals</option>
+                        <option>St. Louis Rams</option>
+                        <option>San Francisco 49ers</option>
+                        <option>Seattle Seahawks</option>
+                        <option>Baltimore Ravens</option>
+                        <option>Cincinnati Bengals</option>
+                        <option>Cleveland Browns</option>
+                        <option>Pittsburgh Steelers</option>
+                        <option>Houston Texans</option>
+                        <option>Indianapolis Colts</option>
+                        <option>Jacksonville Jaguars</option>
+                        <option>Tennessee Titans</option>
+                        <option>Denver Broncos</option>
+                        <option>Kansas City Chiefs</option>
+                        <option>Oakland Raiders</option>
+                        <option>San Diego Chargers</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <!--Simple Select with Search-->
 				<div class="form-group pmd-textfield pmd-textfield-floating-label">
 					<label>Simple Select with Search</label>
 					<select class="select-with-search form-control pmd-select2">
@@ -120,29 +153,41 @@
             <div class="col-sm-3">Text Fields</div>
             <div class="col-sm-3">
                 <div class="form-group pmd-textfield">
+                    <label for="regular1" class="control-label">
+                        Regular Input
+                    </label>
+                    <input type="text" id="regular1" class="form-control">
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="form-group pmd-textfield pmd-textfield-floating-label">
 					<label for="regular1" class="control-label">
 						Regular Input
 					</label>
 					<input type="text" id="regular1" class="form-control">
 				</div>
             </div>
+            <div class="clearfix"></div>
+
+            <br><br>
+            <div class="col-sm-3">Text Area</div>
             <div class="col-sm-3">
-                <div class="floatLabel">
-                    <input id="name2" name="name2" type="text" required="" value="Default value" class="valid">
-                    <label for="name2">Your Name</label>
+                <div class="form-group pmd-textfield">
+                    <label class="control-label">Text Area</label>
+                    <textarea required class="form-control"></textarea>
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="floatLabel invalid">
-                    <input id="name3" name="name3" type="text" required="">
-                    <label for="name3">Your Name</label>
-                    <p class="floatError">There has been an error</p>
+                <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                    <label class="control-label">Text Area</label>
+                    <textarea required class="form-control"></textarea>
                 </div>
             </div>
             <div class="clearfix"></div>
 
+
             <br><br>
-            <div class="col-sm-3">Text Fields</div>
+            <div class="col-sm-3">Tab Panel</div>
             <div class="col-sm-9">
                 <!--Scrollable tab example -->
 				<div class="pmd-card pmd-z-depth"> 
@@ -173,30 +218,6 @@
 						</div>
 					</div>
 				</div> <!--Scrollable tab example end-->
-            </div>
-            <div class="clearfix"></div>
-
-
-            <br><br>
-            <div class="col-sm-3">Text Area</div>
-            <div class="col-sm-3">
-                <div class="floatLabel">
-                    <textarea name="message1" id="message1" cols="30" rows="10"></textarea>
-                    <label for="message1">Your Message</label>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="floatLabel">
-                    <textarea name="message2" id="message2" cols="30" rows="10" class="valid">Default value</textarea>
-                    <label for="message2">Your Message</label>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="floatLabel invalid">
-                    <textarea name="message3" id="message3" cols="30" rows="10"></textarea>
-                    <label for="message3">Your Message</label>
-                    <p class="floatError">There has been an error</p>
-                </div>
             </div>
             <div class="clearfix"></div>
 

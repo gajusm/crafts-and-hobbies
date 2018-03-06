@@ -10,7 +10,7 @@
 			</div>
 		</div>
 		<div class="prodElement hiddenInfo">
-			<a class="enquireProd" href="javascript:void(0);">Enquire Now</a>
+			<a class="enquireProd pmd-ripple-effect" href="javascript:void(0);">Enquire Now</a>
 		</div>
 	</div>
 </div>
@@ -26,7 +26,7 @@
 			</div>
 		</div>
 		<div class="prodElement hiddenInfo">
-			<a class="enquireProd" href="javascript:void(0);">Enquire Now</a>
+			<a class="enquireProd pmd-ripple-effect" href="javascript:void(0);">Enquire Now</a>
 		</div>
 	</div>
 </div>
@@ -42,7 +42,7 @@
 			</div>
 		</div>
 		<div class="prodElement hiddenInfo">
-			<a class="enquireProd" href="javascript:void(0);">Enquire Now</a>
+			<a class="enquireProd pmd-ripple-effect" href="javascript:void(0);">Enquire Now</a>
 		</div>
 	</div>
 </div>
@@ -58,7 +58,7 @@
 			</div>
 		</div>
 		<div class="prodElement hiddenInfo">
-			<a class="enquireProd" href="javascript:void(0);">Enquire Now</a>
+			<a class="enquireProd pmd-ripple-effect" href="javascript:void(0);">Enquire Now</a>
 		</div>
 	</div>
 </div>
@@ -74,7 +74,7 @@
 			</div>
 		</div>
 		<div class="prodElement hiddenInfo">
-			<a class="enquireProd" href="javascript:void(0);">Enquire Now</a>
+			<a class="enquireProd pmd-ripple-effect" href="javascript:void(0);">Enquire Now</a>
 		</div>
 	</div>
 </div>
@@ -90,7 +90,7 @@
 			</div>
 		</div>
 		<div class="prodElement hiddenInfo">
-			<a class="enquireProd" href="javascript:void(0);">Enquire Now</a>
+			<a class="enquireProd pmd-ripple-effect" href="javascript:void(0);">Enquire Now</a>
 		</div>
 	</div>
 </div>
@@ -106,7 +106,7 @@
 			</div>
 		</div>
 		<div class="prodElement hiddenInfo">
-			<a class="enquireProd" href="javascript:void(0);">Enquire Now</a>
+			<a class="enquireProd pmd-ripple-effect" href="javascript:void(0);">Enquire Now</a>
 		</div>
 	</div>
 </div>
@@ -122,7 +122,7 @@
 			</div>
 		</div>
 		<div class="prodElement hiddenInfo">
-			<a class="enquireProd" href="javascript:void(0);">Enquire Now</a>
+			<a class="enquireProd pmd-ripple-effect" href="javascript:void(0);">Enquire Now</a>
 		</div>
 	</div>
 </div>

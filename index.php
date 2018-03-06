@@ -272,9 +272,9 @@
 			</div>
 			<div class="homeMidRow">
 				<div class="col-sm-3">
-					<a class="homeAds" href="#">
+					<a class="homeAds" href="javascript:void(0);">
 						<div class="adsTitle">
-							<span>Deal of the day</span>
+							<span class="pmd-ripple-effect">Deal of the day</span>
 						</div>
 						<div class="adsBox">
 							<img src="./images/ads1.jpg" alt="">
@@ -304,9 +304,9 @@
 					</div>
 				</div>
 				<div class="col-sm-3">
-					<a class="homeAds" href="#">
+					<a class="homeAds" href="javascript:void(0);">
 						<div class="adsTitle">
-							<span>Deal of the day</span>
+							<span class="pmd-ripple-effect">Deal of the day</span>
 						</div>
 						<div class="adsBox">
 							<img src="./images/ads1.jpg" alt="">

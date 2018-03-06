@@ -47,9 +47,9 @@
 								<h4>Colors</h4>
 							</div>
 							<div class="col-md-9 col-xs-12">
-								<a href="javascript:void(0);" class="catVariation colorVar" style="background-color: red"></a>
-								<a href="javascript:void(0);" class="catVariation colorVar" style="background-color: blue"></a>
-								<a href="javascript:void(0);" class="catVariation colorVar" style="background-color: green"></a>
+								<a href="javascript:void(0);" class="catVariation pmd-ripple-effect colorVar" style="background-color: red"></a>
+								<a href="javascript:void(0);" class="catVariation pmd-ripple-effect colorVar" style="background-color: blue"></a>
+								<a href="javascript:void(0);" class="catVariation pmd-ripple-effect colorVar" style="background-color: green"></a>
 							</div>
 						</div>
 					</div>
@@ -60,21 +60,21 @@
 								<h4>Sizes</h4>
 							</div>
 							<div class="col-md-9 col-xs-12">
-								<a href="javascript:void(0);" class="catVariation sizeVar">S</a>
-								<a href="javascript:void(0);" class="catVariation sizeVar">M</a>
-								<a href="javascript:void(0);" class="catVariation sizeVar">L</a>
-								<a href="javascript:void(0);" class="catVariation sizeVar">XL</a>
-								<a href="javascript:void(0);" class="catVariation sizeVar">XXL</a>
+								<a href="javascript:void(0);" class="catVariation pmd-ripple-effect sizeVar">S</a>
+								<a href="javascript:void(0);" class="catVariation pmd-ripple-effect sizeVar">M</a>
+								<a href="javascript:void(0);" class="catVariation pmd-ripple-effect sizeVar">L</a>
+								<a href="javascript:void(0);" class="catVariation pmd-ripple-effect sizeVar">XL</a>
+								<a href="javascript:void(0);" class="catVariation pmd-ripple-effect sizeVar">XXL</a>
 							</div>
 						</div>
 					</div>
 					<hr>	
 					<div class="row infoActions">
 						<div class="col-md-6 col-xs-12">
-							<button class="btn primaryBtn">Add to Cart</button>
+							<button class="btn primaryBtn pmd-ripple-effect">Add to Cart</button>
 						</div>
 						<div class="col-md-6 col-xs-12">
-							<button class="btn primaryBtn">Add to Wishlist</button>
+							<button class="btn primaryBtn pmd-ripple-effect">Add to Wishlist</button>
 						</div>
 					</div>
 					<hr>	
