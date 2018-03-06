@@ -80,16 +80,6 @@
 								<label>State/Province</label>
 								<select class="select-with-search form-control pmd-select2">
 									<option></option>
-									<option>India</option>
-									<option>United States</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="form-group pmd-textfield">
-								<label>State/Province</label>
-								<select class="select-with-search form-control pmd-select2">
-									<option></option>
 									<option>Maharashtra</option>
 									<option>California</option>
 								</select>
